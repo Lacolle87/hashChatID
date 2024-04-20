@@ -17,7 +17,7 @@ package main
 
 import (
 	"fmt"
-	hcid "github.com/yourusername/hashchatid"
+	hcid "github.com/Lacolle87/hashchatid"
 )
 
 func main() {
