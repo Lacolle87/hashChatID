@@ -17,12 +17,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/yourusername/hashchatid"
+	hcid "github.com/yourusername/hashchatid"
 )
 
 func main() {
 	chatID := int64(1234567890)
-	hashedID := hashchatid.HashChatID(chatID)
+	hashedID := hcid.HashChatID(chatID)
 	fmt.Println("Hashed Chat ID:", hashedID)
 }
 ```
