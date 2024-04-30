@@ -13,7 +13,7 @@ func HashChatID(id int64) string {
 
 	_, err := hasher.Write([]byte(idString))
 	if err != nil {
-		return fmt.Sprintf("hashchatid: %v", err)
+		return fmt.Sprintf("error: %v", err)
 	}
 
 	hashedID := hex.EncodeToString(hasher.Sum(nil))
