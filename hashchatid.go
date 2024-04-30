@@ -4,18 +4,19 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 	"fmt"
+	"strconv"
 )
 
-func HashChatID(chatID int64) string {
-	strChatID := fmt.Sprintf("%d", chatID)
+func HashChatID(id int64) string {
+	idString := strconv.FormatInt(id, 10)
 	hasher := sha256.New()
 
-	_, err := hasher.Write([]byte(strChatID))
+	_, err := hasher.Write([]byte(idString))
 	if err != nil {
-		return ""
+		return fmt.Sprintf("hashchatid: %v", err)
 	}
 
-	hashedChatID := hex.EncodeToString(hasher.Sum(nil))
+	hashedID := hex.EncodeToString(hasher.Sum(nil))
 
-	return hashedChatID
+	return hashedID
 }
