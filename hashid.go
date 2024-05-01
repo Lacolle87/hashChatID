@@ -1,4 +1,4 @@
-package hashchatid
+package hashid
 
 import (
 	"crypto/sha256"
@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func HashChatID(id int64) string {
+func HashID(id int64) string {
 	idString := strconv.FormatInt(id, 10)
 	hasher := sha256.New()
 
