@@ -1,4 +1,4 @@
-# HashChatID
+# HashID
 
 HashChatID is a Go package that provides a simple utility function for hashing integer chat IDs using the SHA-256 cryptographic hash function. This package is useful for scenarios where you need to anonymize or obfuscate chat IDs or similar identifiers, ensuring privacy and security in your applications.
 
@@ -10,19 +10,19 @@ HashChatID is a Go package that provides a simple utility function for hashing i
 
 ## Installation
 
-To use HashChatID in your Go project:
+To use HashID in your Go project:
 
 ```go
 package main
 
 import (
 	"fmt"
-	hcid "github.com/Lacolle87/hashchatid"
+	hid "github.com/Lacolle87/hashID"
 )
 
 func main() {
 	chatID := int64(1234567890)
-	hashedID := hcid.HashChatID(chatID)
+	hashedID := hid.HashID(chatID)
 	fmt.Println("Hashed Chat ID:", hashedID)
 }
 ```
