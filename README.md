@@ -1,6 +1,6 @@
 # HashID
 
-HashChatID is a Go package that provides a simple utility function for hashing integer chat IDs using the SHA-256 cryptographic hash function. This package is useful for scenarios where you need to anonymize or obfuscate chat IDs or similar identifiers, ensuring privacy and security in your applications.
+HashID is a Go package that provides a simple utility function for hashing integer chat IDs using the SHA-256 cryptographic hash function. This package is useful for scenarios where you need to anonymize or obfuscate chat IDs or similar identifiers, ensuring privacy and security in your applications.
 
 ## Features
 
